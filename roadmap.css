@@ -1,0 +1,280 @@
+:root {
+    --primary: var(--primary-color);
+    --primary-dark: var(--green-dark);
+    --primary-light: var(--green-tint);
+    --accent: var(--secondary-color);
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --bg-page: #f8fafc;
+    --bg-card: #ffffff;
+    --border: #e2e8f0;
+    --radius: 12px;
+    --shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+    --transition: 0.25s ease;
+}
+
+.roadmap-hero {
+    background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%);
+    padding: 3.5rem 0 2.5rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+}
+
+.program-badge {
+    display: inline-block;
+    background: var(--primary-light);
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 0.35rem 0.9rem;
+    border-radius: 999px;
+    margin-bottom: 0.9rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.roadmap-hero h1 {
+    font-size: clamp(1.85rem, 4vw, 2.65rem);
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+}
+
+.hero-subtitle {
+    max-width: 680px;
+    margin: 0 auto 2rem;
+    color: var(--text-muted);
+    font-size: 1.05rem;
+}
+
+.track-selector {
+    display: inline-flex;
+    background: #e2e8f0;
+    padding: 0.35rem;
+    border-radius: 999px;
+    gap: 0.35rem;
+    margin-bottom: 1.75rem;
+}
+
+.track-btn {
+    border: none;
+    background: transparent;
+    color: var(--text-main);
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 0.75rem 1.6rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all var(--transition);
+}
+
+.track-btn:hover {
+    color: var(--primary-color);
+}
+
+.track-btn.active {
+    background: var(--primary-color);
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(57, 199, 0, 0.28);
+}
+
+.viewing-banner {
+    max-width: 720px;
+    margin: 0 auto;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 5px solid var(--primary-color);
+    border-radius: var(--radius);
+    padding: 1rem 1.35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    box-shadow: var(--shadow);
+}
+
+.viewing-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    font-weight: 700;
+}
+
+.viewing-value {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    letter-spacing: 0.04em;
+}
+
+.viewing-desc {
+    font-size: 0.92rem;
+    color: var(--text-muted);
+}
+
+.roadmap-content {
+    padding: 2.5rem 0 4rem;
+}
+
+.day-progression {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-bottom: 1.5rem;
+    background: var(--bg-card);
+    padding: 1rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+}
+
+.day-node {
+    background: var(--primary-light);
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 8px;
+}
+
+.day-arrow {
+    color: var(--text-muted);
+    font-weight: 700;
+}
+
+.difficulty-legend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+.legend-title {
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.legend-sep {
+    color: var(--text-muted);
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.7rem;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.badge-beginner {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.badge-bridge {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.badge-intermediate {
+    background: #e0e7ff;
+    color: #3730a3;
+}
+
+.tasks-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.35rem;
+}
+
+.task-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.task-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(15, 23, 42, 0.09);
+}
+
+.task-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.85rem;
+}
+
+.task-number {
+    font-size: 0.82rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--primary-color);
+}
+
+.task-day {
+    background: #f1f5f9;
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 0.82rem;
+    padding: 0.25rem 0.65rem;
+    border-radius: 6px;
+}
+
+.task-title {
+    font-size: 1.15rem;
+    color: var(--accent);
+    margin-bottom: 0.6rem;
+}
+
+.task-desc {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.25rem;
+    flex-grow: 1;
+}
+
+.task-card-footer {
+    border-top: 1px solid var(--border);
+    padding-top: 0.85rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.difficulty-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .tasks-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .track-selector {
+        display: flex;
+        flex-direction: column;
+        border-radius: var(--radius);
+        width: 100%;
+    }
+
+    .track-btn {
+        width: 100%;
+        border-radius: 8px;
+    }
+}

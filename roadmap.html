@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechBridge | 30-Day Internship Roadmap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="roadmap.css" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="./images/techbridge-logo.png" alt="Tech Bridge Logo" width="150" height="100" style="object-fit: cover;">
+        </a>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html" class="nav-btn">Programs</a></li>
+                <li><a href="tasks.html" class="nav-btn">Internship Tasks</a></li>
+                <li><a href="roadmap.html" class="nav-btn">Internship Roadmap</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="roadmap-hero">
+        <div class="container">
+            <span class="program-badge">30-Day Practical Internship</span>
+            <h1>Interactive Internship Roadmap</h1>
+            <p class="hero-subtitle">
+            Explore the complete 8-task practical journey across both TechBridge tracks.
+            Switch tracks below to see what you will build, when each milestone unlocks, and how difficulty scales.
+            </p>
+
+            <div class="track-selector" role="group" aria-label="Choose Internship Track">
+            <button
+                type="button"
+                class="track-btn active"
+                id="btn-data-analytics"
+                data-track="data-analytics"
+                aria-pressed="true"
+            >
+                Data Analytics
+            </button>
+            <button
+                type="button"
+                class="track-btn"
+                id="btn-web-development"
+                data-track="web-development"
+                aria-pressed="false"
+            >
+                Web Development
+            </button>
+            </div>
+
+            <div class="viewing-banner" aria-live="polite">
+            <span class="viewing-label">Currently Viewing:</span>
+            <strong id="current-track-name" class="viewing-value">DATA ANALYTICS</strong>
+            <span id="current-track-summary" class="viewing-desc">
+                8 hands-on tasks covering Spreadsheets, Visualization, SQL, and End-to-End Business Analysis.
+            </span>
+            </div>
+        </div>
+        </section>
+
+        <section class="roadmap-content">
+        <div class="container">
+            <div class="day-progression" aria-label="30-Day Milestone Schedule">
+            <div class="day-node"><span>Day 1</span></div>
+            <div class="day-arrow" aria-hidden="true">→</div>
+            <div class="day-node"><span>Day 4</span></div>
+            <div class="day-arrow" aria-hidden="true">→</div>
+            <div class="day-node"><span>Day 8</span></div>
+            <div class="day-arrow" aria-hidden="true">→</div>
+            <div class="day-node"><span>Day 11</span></div>
+            <div class="day-arrow" aria-hidden="true">→</div>
+            <div class="day-node"><span>Day 15</span></div>
+            <div class="day-arrow" aria-hidden="true">→</div>
+            <div class="day-node"><span>Day 19</span></div>
+            <div class="day-arrow" aria-hidden="true">→</div>
+            <div class="day-node"><span>Day 22</span></div>
+            <div class="day-arrow" aria-hidden="true">→</div>
+            <div class="day-node"><span>Day 26</span></div>
+            </div>
+
+            <div class="difficulty-legend">
+            <span class="legend-title">Difficulty Progression:</span>
+            <span class="badge badge-beginner">Beginner</span>
+            <span class="legend-sep">→</span>
+            <span class="badge badge-bridge">Beginner → Intermediate</span>
+            <span class="legend-sep">→</span>
+            <span class="badge badge-intermediate">Intermediate</span>
+            </div>
+
+            <div id="tasks-container" class="tasks-grid"></div>
+        </div>
+        </section>
+    </main>
+
+    <section class="footer-section">
+        <footer>
+            <h2>Tech<span>Bridge</span></h2>
+            <p>Bridging the Gap Between Learning and Real-World Experience.</p>
+            <div class="footer-programs">
+                <dl>
+                    <dt><a href="programs.html">Programs</a></dt>
+                    <dd><a href="#tracks">Data Analytics</a></dd>
+                    <dd><a href="#tracks">Web Development</a></dd>
+                    <dd><a href="#compare">Program Comparison</a></dd>
+                </dl>
+            </div>
+            <div class="footer-links">
+                <p>Social Links</p>
+                <ul class="footer-social-links">
+                    <li>
+                        <a target="_blank" href="mailto:techbridgebaslink@gmail.com">
+                        <i class="fa-solid fa-envelope icon"></i> Contact Us
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/p/Baselink-Services-100066771475783/">
+                        <i class="fa-brands fa-facebook icon"></i> Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/techbridge">
+                        <i class="fa-brands fa-x-twitter icon"></i> Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/company/techbridge-services/">
+                        <i class="fa-brands fa-linkedin icon"></i> LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </section>
+
+    <script src="roadmap.js"></script>
+</body>
+</html>
