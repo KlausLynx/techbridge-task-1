@@ -10,18 +10,27 @@
     <link rel="stylesheet" href="./tasks.css">
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logo">
-            <img src="./images/techbridge-logo.png" alt="Tech Bridge Logo" width="150" height="100" style="object-fit: cover;">
-        </a>
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="programs.html" class="nav-btn">Programs</a></li>
-                <li><a href="tasks.html" class="nav-btn">Internship Tasks</a></li>
-                <li><a href="roadmap.html" class="nav-btn">Internship Roadmap</a></li>
-            </ul>
-        </nav>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand" aria-label="TechBridge Home">
+                <img src="./images/techbridge-logo.png" alt="TechBridge Logo" class="brand-logo" />
+                <span class="brand-text">Tech<span class="brand-accent">Bridge</span></span>
+            </a>
+
+            <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="programs.html" class="nav-link">Programs</a>
+                <a href="tasks.html" class="nav-link active">Internship Tasks</a>
+                <a href="roadmap.html" class="nav-link">Internship Roadmap</a>
+                <a href="challenge.html" class="nav-link">Challenge Hub</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="mobileMenuBtn" class="icon-btn mobile-only" aria-label="Toggle Menu" aria-expanded="false">
+                    ☰
+                </button>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -665,44 +674,60 @@
         </section>
     </main>
 
-    <section class="footer-section">
-        <footer>
-            <h2>Tech<span>Bridge</span></h2>
-            <p>Bridging the Gap Between Learning and Real-World Experience.</p>
-            <div class="footer-programs">
-                <dl>
-                    <dt><a href="programs.html">Programs</a></dt>
-                    <dd><a href="#tracks">Data Analytics</a></dd>
-                    <dd><a href="#tracks">Web Development</a></dd>
-                    <dd><a href="#compare">Program Comparison</a></dd>
-                </dl>
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div>
+                    <h2 class="footer-brand-title">Tech<span>Bridge</span></h2>
+                    <p class="footer-tagline">
+                        By Baselink Services Limited — bridging the gap between classroom learning and real-world industry execution.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="footer-heading">Explore</h3>
+                    <ul class="footer-nav-list">
+                        <li><a href="programs.html#tracks">Data Analytics</a></li>
+                        <li><a href="programs.html#tracks">Web Development</a></li>
+                        <li><a href="programs.html#compare">Program Comparison</a></li>
+                        <li><a href="tasks.html">Internship Tasks</a></li>
+                        <li><a href="roadmap.html">30-Day Roadmap</a></li>
+                        <li><a href="challenge.html">Challenge Hub</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer-heading">Connect With Us</h3>
+                    <ul class="footer-nav-list">
+                        <li>
+                            <a target="_blank" href="mailto:techbridgebaslink@gmail.com">
+                                <i class="fa-solid fa-envelope icon"></i> Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.facebook.com/p/Baselink-Services-100066771475783/">
+                                <i class="fa-brands fa-facebook icon"></i> Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://twitter.com/techbridge">
+                                <i class="fa-brands fa-x-twitter icon"></i> Twitter / X
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.linkedin.com/company/techbridge-services/">
+                                <i class="fa-brands fa-linkedin icon"></i> LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-links">
-                <p>Social Links</p>
-                <ul class="footer-social-links">
-                    <li>
-                        <a target="_blank" href="mailto:techbridgebaslink@gmail.com">
-                        <i class="fa-solid fa-envelope icon"></i> Contact Us
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.facebook.com/p/Baselink-Services-100066771475783/">
-                        <i class="fa-brands fa-facebook icon"></i> Facebook
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://twitter.com/techbridge">
-                        <i class="fa-brands fa-x-twitter icon"></i> Twitter
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.linkedin.com/company/techbridge-services/">
-                        <i class="fa-brands fa-linkedin icon"></i> LinkedIn
-                        </a>
-                    </li>
-                </ul>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 TechBridge Internship Program. All rights reserved.</p>
+                <p>Baselink Services Limited &bull; Data Analytics &amp; Web Development</p>
             </div>
-        </footer>
-    </section>
+        </div>
+    </footer>
 </body>
 </html>
